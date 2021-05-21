@@ -1,7 +1,5 @@
 package spring5_webmvc_mybatis_study.mappers;
 
-import static org.junit.Assert.fail;
-
 import java.util.List;
 
 import org.apache.ibatis.logging.Log;

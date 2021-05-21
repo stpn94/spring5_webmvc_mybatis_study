@@ -28,7 +28,6 @@ public class RegisterController {
         if (!agree) {
             return "register/step1";
         }
-//        model.addAttribute("registerRequest", new RegisterRequest());
         return "register/step2";
     }
 
