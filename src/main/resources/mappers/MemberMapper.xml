@@ -26,4 +26,16 @@
 		member (email, password, name, regdate) 
 		values (#{email}, #{password}, #{name}, now())
 	</insert>
+	
+	<update id="updateMember">
+		update member 
+		   set name=#{name}, password=#{password} 
+		 where email=#{email}
+	</update>
+	
+	<delete id="deleteMember">
+		delete 
+		  from member 
+		 where email=#{email}
+	</delete>
 </mapper>

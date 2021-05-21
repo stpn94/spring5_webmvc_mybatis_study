@@ -76,12 +76,19 @@ public class MemberMapperTest {
 	public void test5UpdateMember() {
 		log.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + "()");
 
-		fail("Not yet implemented");
+		Member newMember = new Member("test20@test.co.kr", "2222", "테스트20");
+		
+		int res = mapper.updateMember(newMember);
+		Assert.assertEquals(1, res);
 	}
 
 	@Test
 	public void test6DeleteMember() {
-		fail("Not yet implemented");
+		log.debug(Thread.currentThread().getStackTrace()[1].getMethodName() + "()");
+		
+		Member newMember = new Member("test20@test.co.kr", "2222", "테스트20");
+		int res = mapper.deleteMember(newMember);
+		Assert.assertEquals(1, res);
 	}
 
 }
